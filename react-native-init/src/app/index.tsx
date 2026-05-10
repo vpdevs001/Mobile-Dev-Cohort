@@ -1,42 +1,63 @@
-import { useState } from "react";
-import { Pressable, Text, TextInput, View } from "react-native";
+import {
+  KeyboardAvoidingView,
+  Platform,
+  Pressable,
+  Text,
+  TextInput,
+  View,
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function HomeScreen() {
-  const [name, setName] = useState("");
-
+export default function App() {
   return (
-    <View>
-      <Text numberOfLines={3}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id vero
-        provident tenetur iusto assumenda ullam unde officia facilis voluptas
-      </Text>
+    <SafeAreaView style={{ flex: 1 }}>
+      <KeyboardAvoidingView
+        style={{ flex: 1 }}
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
+      >
+        <View style={{ flex: 1, justifyContent: "flex-end", padding: 24 }}>
+          <Text style={{ fontSize: 24, fontWeight: "bold", marginBottom: 24 }}>
+            Login
+          </Text>
 
-      {/* Remote Image from internet */}
-      {/* <Image source={{ uri: "uri" }} width={200} height={200} /> */}
+          <TextInput
+            placeholder="Email"
+            style={{
+              borderWidth: 1,
+              borderColor: "#ddd",
+              borderRadius: 10,
+              padding: 14,
+              fontSize: 16,
+              marginBottom: 12,
+            }}
+          />
+          <TextInput
+            placeholder="Password"
+            secureTextEntry
+            style={{
+              borderWidth: 1,
+              borderColor: "#ddd",
+              borderRadius: 10,
+              padding: 14,
+              fontSize: 16,
+              marginBottom: 20,
+            }}
+          />
 
-      {/* Local Image  */}
-      {/* <Image source={require("path")} style={{ height: 100, width: 100 }} blurRadius={30} /> */}
-
-      <TextInput
-        placeholder="Enter your name..."
-        value={name}
-        onChangeText={setName}
-        placeholderTextColor={"blue"}
-        style={{
-          borderWidth: 1,
-          borderColor: "#ddd",
-          marginTop: 10,
-          fontSize: 24,
-        }}
-      />
-
-      <Pressable onPress={() => alert("Button Pressed!")} style={
-        ({pressed}) => ({
-          backgroundColor: pressed ? '#4a42df' : '#6c63fe'
-        })
-      }>
-        <Text>Press me!</Text>
-      </Pressable>
-    </View>
+          <Pressable
+            style={{
+              backgroundColor: "#6C63FF",
+              padding: 16,
+              borderRadius: 12,
+              alignItems: "center",
+            }}
+          >
+            <Text style={{ color: "white", fontWeight: "bold", fontSize: 16 }}>
+              Sign In
+            </Text>
+          </Pressable>
+        </View>
+      </KeyboardAvoidingView>
+    </SafeAreaView>
   );
 }
