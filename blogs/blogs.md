@@ -20,3 +20,7 @@
 5. ## How WhatsApp Works Without Internet: Offline Messaging and Sync Explained
 
    [Read Blog](https://vedpandeydev.hashnode.dev/how-whatsapp-works-without-internet-offline-messaging-and-sync-explained)
+
+6. ## How Instagram Stores Reels, Photos, and Drafts Behind the Scenes
+
+   [Read Blog](https://vedpandeydev.hashnode.dev/how-instagram-stores-reels-photos-and-drafts-behind-the-scenes)
