@@ -12,6 +12,11 @@
 
    [Read Blog](https://vedpandeydev.hashnode.dev/how-instagram-whatsapp-uber-netflix-would-be-built-today-using-expo-router)
 
-3. ## Expo Router vs React Navigation - Which One Should You Use in 2026?
+4. ## Expo Router vs React Navigation - Which One Should You Use in 2026?
 
    [Read Blog](https://vedpandeydev.hashnode.dev/expo-router-vs-react-navigation-which-one-should-you-use-in-2026)
+   [Read Blog](https://vedpandeydev.hashnode.dev/how-instagram-whatsapp-uber-netflix-would-be-built-today-using-expo-router)
+
+5. ## How WhatsApp Works Without Internet: Offline Messaging and Sync Explained
+
+   [Read Blog](https://vedpandeydev.hashnode.dev/how-whatsapp-works-without-internet-offline-messaging-and-sync-explained)
